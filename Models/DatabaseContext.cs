@@ -7,6 +7,7 @@ namespace CrazyCoolCars.Models
 {
   public partial class DatabaseContext : DbContext
   {
+    public DbSet<Car> Cars { get; set; }
 
     private string ConvertPostConnectionToConnectionString(string connection)
     {
